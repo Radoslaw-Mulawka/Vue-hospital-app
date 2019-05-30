@@ -1,0 +1,58 @@
+//bootstrap styles re-writing
+.nav--full-width {
+    display:flex;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #eaecf6;
+}
+.nav-item {
+    flex:1;
+    color:$dark-txt-col;
+}
+.nav-link:hover {
+    color: $dark-txt-col;
+    background-color: darken(#eaecf6, 5%) !important;
+}
+
+.nav-link {
+    border-radius: initial !important;
+    padding: 1rem 1rem;
+    border-color:transparent !important;
+}
+
+.nav-item:first-child>.nav-link {
+    border-top-left-radius: .25rem !important;
+}
+
+.nav-item:last-child>.nav-link {
+    border-top-right-radius: .25rem !important;
+}
+
+.nav-link:not(.active) {
+    background-color: #eaecf6;
+}
+
+
+
+.tab-content {
+    .add-menu {
+        background-color: transparent;
+        color: $action-color;
+        border: none;
+        cursor: pointer;
+        justify-self: end;
+        display:inline-block;
+        margin: 0 20px 20px;
+        &:hover {
+            color: darken($action-color,10%);
+        }
+      }
+    &>.active {
+
+    }
+}
+
+.tab-pane {
+
+}
+

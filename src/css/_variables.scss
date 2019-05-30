@@ -1,0 +1,62 @@
+@mixin placeholderColor($col) {
+    color: lighten($col,20%);
+}
+
+
+$main-txt-color: #4c4b5a;
+$second-main-txt-color: #757384;
+
+
+// loginPage vars
+$login-main-txt: #b6b4d3;
+$login-second-main-txt: #fefefe;
+
+
+
+//GENERAL COLORS
+$action-color: #00baff;
+$white : #fff;
+$dark-bg-col: #403a8f;
+$dark-txt-col: #11080e;
+$light-txt-col: #f0eff5;
+
+// //NAVIGATION COLORS
+$nav-bg-color: $dark-bg-col;
+$nav-txt-color: $light-txt-col;
+$nav-underline-color: $action-color;
+$nav-select-bg: $dark-bg-col;
+
+
+
+// //BASIC INFO COLORS
+$basic-info-txt-color: $light-txt-col;
+$breadcrumbs-dark: darken($light-txt-col,20%);
+$basic-info-btn-bg: $action-color;
+$basic-info-btn-txt: $light-txt-col;
+
+
+// //TABLE (GRID) COLORS
+
+    // toolbar
+    $grid-toolbar-bg: #d7e9ef;
+    $grid-toolbar-select-border: $dark-txt-col;
+    $grid-toolbar-select--txt-col: $dark-txt-col;
+    $grid-toolbar-btn: $action-color;
+
+    //thead
+    $thead-txt-dark-color: $dark-txt-col;
+    $thead-txt-light-color: $dark-txt-col;
+
+    //tbody
+    $tbody-txt-col: $dark-txt-col;
+
+    $status-col: #00e09a;;
+
+
+
+// //FORM COLORS
+$form-label-txt-col: $dark-txt-col;
+$form-input-txt-col: $dark-txt-col;
+$form-input-border-col: darken($light-txt-col,15%);
+
+

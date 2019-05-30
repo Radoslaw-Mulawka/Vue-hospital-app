@@ -1,0 +1,21 @@
+// ---------------------------
+// --- project: IMFood
+// --- description: footer styles
+// --- author: DSB SI-Consulting.pl
+// --- version: 0.1
+// --- module: footer.scss
+// ---------------------------
+
+footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 0 20px;
+    p {
+        margin:0;
+    }
+}
+
+// eof -----------------------

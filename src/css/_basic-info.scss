@@ -1,0 +1,144 @@
+
+.basic-info {
+    display: flex;
+    flex-direction: column; // background-color: #100e2e;
+    position: relative; // is need to make z-index work
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $basic-info-txt-color;
+    font-family: 'Quicksand medium';
+    &--separated {
+        grid-column: span 2;
+    }
+    &__breadcrumbs {
+        margin-bottom: 7px;
+    }
+    &__breadcrumbs-name {
+        font-size: 12px;
+        color: $breadcrumbs-dark !important;
+        &:after {
+            content: '/';
+            margin: 0 5px;
+        }
+        &:last-child {
+            color: $basic-info-txt-color !important;
+        }
+        &:last-child:after {
+            content: ''
+        }
+    }
+    &__actions {
+        display: flex;
+        align-items: stretch;
+        // align-items: center;
+        & .form__input {
+            color: inherit !important;
+            border:1px solid $form-input-border-col;
+            &:focus, &:active, &:hover {
+                outline:none;
+            }
+        }
+    }
+    &__name {
+        font-size: 19px;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+    &__select-label {
+        margin-right: 10px;
+    }
+    &__select {
+        width: 332px;
+        height: 38px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        color: $form-input-txt-col;
+        padding-left: 10px;
+    }
+    &__select--form {
+        padding:0 10px;
+        width:inherit;
+        height:30px;
+        background-color: inherit;
+        border:1px solid #6b6b6b;
+        color: $basic-info-txt-color;
+    }
+    &__add-btn {
+        color: $white;
+        font-size:14px;
+        outline:none;
+        padding: 10px 20px;
+        min-width: 100px; 
+        border-radius: 30px;
+        border: none;
+        background-color: lighten($basic-info-btn-bg,20%);
+        box-shadow: 0px 5px $basic-info-btn-bg;
+        margin: 0 10px 20px!important;
+        &:active {
+            box-shadow: 0px 3px $basic-info-btn-bg;
+            transform: translateY(4px);
+        }
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    &__del-btn {
+        color: $white;
+        font-size:14px;
+        outline:none;
+        padding: 10px 20px;
+        min-width: 100px;
+        border-radius: 30px;
+        border: none;
+        background-color: #fc526b;
+        box-shadow: 0px 5px #f5afbc;
+        &:active {
+            box-shadow: 0px 3px #f5afbc;
+            transform: translateY(4px);
+        }
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    &__pdf-btn {
+        color: $white;
+        font-size:14px;
+        outline:none;
+        padding: 10px 20px;
+        min-width: 100px;
+        border-radius: 30px;
+        border: none;
+        background-color: #27acaf;
+        box-shadow: 0px 5px #28cac6;
+        &:active {
+            box-shadow: 0px 3px #28cac6;
+            transform: translateY(4px);
+        }
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    &__rel-btn {
+        color: $white;
+        font-size:14px;
+        outline:none;
+        padding: 10px 20px;
+        min-width: 100px;
+        border-radius: 30px;
+        border: none;
+        background-color: $nav-bg-color;
+        box-shadow: 0px 5px #342f81;
+        &:active {
+            box-shadow: 0px 3px #28cac6;
+            transform: translateY(4px);
+        }
+        &:hover {
+            cursor:pointer;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.form__select,
+.form__input {
+    font-size: 12px;
+}
+
+#sap-send-btn {
+    font-size: 12px;
+}
+
+a.del-item,
+a.add-item  {
+    cursor: pointer;
+}
+
+.card-title .fe {
+    border-width:2px !important;
+}
+
+.editable{
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    min-height: 26px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.editable:hover{
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: 1px solid $form-input-border-col;
+    padding: 3px 0 3px 10px;
+}

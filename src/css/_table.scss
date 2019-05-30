@@ -1,0 +1,50 @@
+// ---------------------------
+// --- project: IMFood
+// --- description: table styles
+// --- author: DSB SI-Consulting.pl
+// --- version: 0.1
+// --- module: table.scss
+// ---------------------------
+
+// override for dropdown responsiveness
+
+@media (min-width: 768px) {
+    .table-responsive {
+        overflow: inherit;
+    }
+}
+
+// table--grid
+.table {
+    &--grid {
+        font-size: 0.875rem;
+        font-family: 'Quicksand medium';
+        thead {
+            th {
+                border: none;
+            }
+        }
+        tbody {
+            td {
+                vertical-align: middle;
+            }
+            &:after {
+                //making space for tfoot summary
+                line-height:1em;
+                content:"\200C";
+                display:block;
+            }
+            tr:last-child td {
+                border-bottom: 1px solid $gray-300;
+            }
+        }
+        tfoot {
+            td {
+                border:none;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+// eof -----------------------

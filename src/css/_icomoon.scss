@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../static/fonts/icomoon.eot?or13pp');
+    src:  url('../static/fonts/icomoon.eot?or13pp#iefix') format('embedded-opentype'),
+      url('../static/fonts/icomoon.ttf?or13pp') format('truetype'),
+      url('../static/fonts/icomoon.woff?or13pp') format('woff'),
+      url('../static/fonts/icomoon.svg?or13pp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-asygnaty:before {
+    content: "\e900";
+  }
+  .icon-diety:before {
+    content: "\e901";
+  }
+  .icon-do-gory:before {
+    content: "\e902";
+  }
+  .icon-dokumenty:before {
+    content: "\e903";
+  }
+  .icon-dol:before {
+    content: "\e904";
+  }
+  .icon-edytuj-profil:before {
+    content: "\e905";
+  }
+  .icon-kalendarz:before {
+    content: "\e906";
+  }
+  .icon-kontrahenci:before {
+    content: "\e907";
+  }
+  .icon-kontrahenci-dostawcy:before {
+    content: "\e908";
+  }
+  .icon-kontrahenci-franczyzobiorcy:before {
+    content: "\e909";
+  }
+  .icon-kontrahenci-klienci:before {
+    content: "\e90a";
+  }
+  .icon-kontrahenci-odbiorcy:before {
+    content: "\e90b";
+  }
+  .icon-kuchnie:before {
+    content: "\e90c";
+  }
+  .icon-narzedzia:before {
+    content: "\e90d";
+  }
+  .icon-pdf:before {
+    content: "\e90e";
+  }
+  .icon-plany-zywionych:before {
+    content: "\e90f";
+  }
+  .icon-plany-zywionych-ok:before {
+    content: "\e910";
+  }
+  .icon-produkcja:before {
+    content: "\e911";
+  }
+  .icon-produkcja2:before {
+    content: "\e912";
+  }
+  .icon-produkcja3:before {
+    content: "\e913";
+  }
+  .icon-przyjecia:before {
+    content: "\e914";
+  }
+  .icon-raporty:before {
+    content: "\e915";
+  }
+  .icon-receptury:before {
+    content: "\e916";
+  }
+  .icon-sortuj:before {
+    content: "\e917";
+  }
+  .icon-stany-magazynowe:before {
+    content: "\e918";
+  }
+  .icon-surowce:before {
+    content: "\e919";
+  }
+  .icon-umowy:before {
+    content: "\e91a";
+  }
+  .icon-uprawnienia:before {
+    content: "\e91b";
+  }
+  .icon-user:before {
+    content: "\e91c";
+  }
+  .icon-ustawienia:before {
+    content: "\e91d";
+  }
+  .icon-uzytkownicy:before {
+    content: "\e91e";
+  }
+  .icon-wydania:before {
+    content: "\e91f";
+  }
+  .icon-wyloguj:before {
+    content: "\e920";
+  }
+  .icon-xls:before {
+    content: "\e921";
+  }
+  .icon-zamowienia:before {
+    content: "\e922";
+  }
+  .icon-zapotrzebowanie:before {
+    content: "\e923";
+  }

@@ -1,0 +1,114 @@
+// ---------------------------
+// --- project: IMFood
+// --- description: dropdown styles
+// --- author: DSB SI-Consulting.pl
+// --- version: 0.1
+// --- module: dropdown.scss
+// ---------------------------
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    font-size:14px;
+    margin:0 !important;
+    padding:0 !important;
+    left: initial !important;
+    will-change: transform;
+    transform: none !important;
+    right: 0 !important;
+    top: 15px !important;
+    &::after,&::before{
+        display:none;
+    }
+}
+.dropdown-small-width {
+    width: unset;
+}
+.dropdown-menu--triangle {
+    min-width: 11rem;
+}
+
+.nav-dropdown {
+    top:35px !important;
+    & p {
+        padding:15px;
+    }
+}
+
+.dropdown-item {
+    i>& {
+        margin-bottom: 0;
+    }
+    display: flex;
+    align-items: center;
+    color: $dark-txt-col;
+    border-bottom: 1px solid #e6e6e6;
+    padding:5px 10px;
+    white-space: inherit;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+//dropdown
+.main-navigation {
+    .dropdown {
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .dropdown-menu {
+            background: $nav-bg-color;
+            color:inherit;
+            min-width: 300px;
+            position: relative;
+            margin-top:15px;
+            // &:after {
+            //     bottom: 100%;
+            //     right: 90%;
+            //     border: solid transparent;
+            //     content: " ";
+            //     height: 0;
+            //     width: 0;
+            //     position: absolute;
+            //     pointer-events: none;
+            //     border-color: rgba(64, 58, 143, 0);
+            //     border-bottom-color: $nav-bg-color;
+            //     border-width: 10px;
+            //     margin-left: -10px;
+            // }
+            .dropdown-item {
+                display: flex;
+                align-items: center;
+                border-left : 3px solid $nav-bg-color;
+                border-bottom: 1px solid #4f4a96;
+                color:inherit;
+                padding-top:10px;
+                &:hover {
+                    background-color: #342f81;
+                    border-left:3px solid #100e2e;
+                }
+                &:focus {
+                    background-color: #342f81;
+                    border-left:3px solid #100e2e;
+                }
+                &.active {
+                    border-left: 3px solid $primary;
+                    background-color: #342f81;
+                }
+                img.main-navigation__icon {
+                    max-width: 24px;
+                }
+            }
+        }
+    }
+}
+// eof -----------------------
+
+
+@media (max-width: 767px) {
+    .table-responsive .table--grid .dropdown-menu--triangle {
+        position: absolute !important;
+    }
+}

@@ -1,0 +1,156 @@
+// ---------------------------
+// --- project: IMFood
+// --- description: flash alerts styles
+// --- author: DSB SI-Consulting.pl
+// --- version: 0.1
+// --- module: _flash-alerts.scss
+// ---------------------------
+
+// attr class for validated inputs
+.is-invalid {
+    border-color: $danger !important;
+    box-shadow: 0 0 8px rgba($danger, 0.4);
+}
+
+.alert-messages-container {
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    z-index: 1;
+}
+
+.alert {
+    // fixed flash message
+    // based on default bootstrap color map
+    // (danger, warning, info, success, primary, secondary, etc.)
+    // usage .alert .alert--flash
+    &--flash {
+        // position: fixed;
+        // bottom: 15px;
+        // right: 15px;
+        min-width: 400px;
+        // -webkit-transform: translate(-50%, -50%);
+        //     -ms-transform: translate(-50%, -50%);
+        //         transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+    &--flash,
+    // grouped for list messages in form
+    &--grouped {
+        border-left-width: 10px;
+    }
+    // cloud alert positioned to input
+    &--cloud {
+        border-left-width: 5px;
+        margin-top:2px;
+        grid-column: 2;
+        position: relative;
+        // mapping class names for triangle color
+        &.alert-danger  {--cc:#f5c6cb;}
+        &.alert-warning {--cc:#ffeeba;}
+        &.alert-info    {--cc:#bee5eb;}
+        &.alert-success {--cc:#c3e6cb;}
+        &:after,
+        &:before {
+            bottom: 100%;
+            left: 10px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: var(--cc);
+            border-width: 5px;
+            margin-left: -5px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: var(--cc);
+            border-width: 6px;
+            margin-left: -6px;
+        }
+        // @media screen and (min-width: 1400px) {
+        //     min-width: 350px;
+        //     max-width: 350px;
+        //     width:350px;
+        //     right:calc(-100% - 10px);
+        //     //chrome hack
+        //     @media screen and (-webkit-min-device-pixel-ratio:0) {
+        //         right:-73%;
+        //     }
+        //     position: relative;
+        //     top:-32px;
+        //     margin-bottom: -32px;
+        //     z-index: 2;
+        //     &:after,
+        //     &:before {
+        //         right: 100%;
+        //         top: 50%;
+        //         left: -10px;
+        //         bottom: 0;
+        //         border: solid transparent;
+        //         content: " ";
+        //         height: 0;
+        //         width: 0;
+        //         position: absolute;
+        //         pointer-events: none;
+        //     }
+        //     &:after {
+        //         border-color: rgba(136, 183, 213, 0);
+        //         border-right-color: var(--cc);
+        //         border-width: 5px;
+        //         margin-top: -5px;
+        //     }
+        //     &:before {
+        //         border-color: rgba(194, 225, 245, 0);
+        //         border-right-color: var(--cc);
+        //         border-width: 6px;
+        //         margin-top: -6px;
+        //     }
+        // }
+        // .close--alert {
+        //     font-size: 1rem;
+        // }
+    }
+    &--cloud--bottom {
+        width: 100%;
+        border-left-width: 5px;
+        margin-top:2px;
+        position: absolute;
+        // mapping class names for triangle color
+        &.alert-danger  {--cc:#f5c6cb;}
+        &.alert-warning {--cc:#ffeeba;}
+        &.alert-info    {--cc:#bee5eb;}
+        &.alert-success {--cc:#c3e6cb;}
+        &:after,
+        &:before {
+            bottom: 100%;
+            left: 10px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: var(--cc);
+            border-width: 5px;
+            margin-left: -5px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: var(--cc);
+            border-width: 6px;
+            margin-left: -6px;
+        }
+
+    }
+}
+
+// eof -----------------------

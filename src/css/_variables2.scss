@@ -1,0 +1,61 @@
+@mixin placeholderColor($col) {
+    color: lighten($col,20%);
+}
+
+
+$main-txt-color: #4c4b5a;
+$second-main-txt-color: #757384;
+
+
+// loginPage vars
+$login-main-txt: #b6b4d3;
+$login-second-main-txt: #fefefe;
+
+
+
+//GENERAL COLORS
+$action-color: #00baff;
+$white : #fff;
+$dark-bg: #403a8f;
+
+
+$dark-txt-col: #63636e;
+$light-txt-col: #9e9e9e;
+
+// //NAVIGATION COLORS
+$nav-bg-color: $dark-bg;
+$nav-txt-color: #dedde9;
+$nav-underline-color: $action-color;
+$nav-select-bg: $dark-bg;
+
+
+
+// //BASIC INFO COLORS
+$breadcrumbs-dark: #77758b;
+$basic-info-txt-color: #bbbbc6;
+$basic-info-btn-bg: $action-color;
+$basic-info-btn-txt: #fff;
+
+
+// //TABLE (GRID) COLORS
+
+    // toolbar
+    $grid-toolbar-bg: #eff6f8;
+    $grid-toolbar-select-border: #cad0d2;
+    $grid-toolbar-select--txt-col: black;
+    $grid-toolbar-btn: $action-color;
+
+    //thead
+    $thead-txt-dark-color: $dark-txt-col;
+    $thead-txt-light-color: $light-txt-col;
+
+    //tbody
+    $tbody-txt-col: $light-txt-col;
+
+
+
+// //FORM COLORS
+$form-label-txt-col: $dark-txt-col;
+$form-input-txt-col: $light-txt-col;
+// $form-input-placeholder-col: #a2a0c1;
+$form-input-border-col: #d9d9d9;

@@ -1,0 +1,132 @@
+.form {
+    font-family: 'Quicksand medium';
+    width:100%;
+    // padding: 0 30px;
+    &__input-group {
+        // display: grid;
+        // justify-content: center;
+    }
+    &__label {
+        color: $form-label-txt-col;
+        font-size: 14px;
+        text-align:right;
+        margin-bottom:0;
+        padding-right:50px;
+        &.required {
+            &:after {
+                content:"*";
+                color: $danger;
+            }
+        }
+    }
+    &__input {
+        color: $form-input-txt-col;
+        border-radius:5px;
+        border:1px solid $form-input-border-col;
+        padding:3px 0 3px 10px;
+        &::placeholder {
+            @include placeholderColor($form-input-txt-col);
+        }
+        &--transparent {
+            &--head {
+                border-color: #707070;
+            }
+            background: transparent;
+        }
+        &--loader {
+            background-image: url("http://loadinggif.com/images/image-selection/3.gif");
+            background-size: 15px 15px;
+            background-position:right 10px center;
+            background-repeat: no-repeat;
+        }
+    }
+    &__textarea {
+        color: $form-input-txt-col;
+        border-radius:5px;
+        border:1px solid $form-input-border-col;
+        padding:3px 0 3px 10px;
+    }
+    &__select {
+        color: $form-input-txt-col;
+        border-radius:5px;
+        border:1px solid $form-input-border-col;
+        padding:3px 0 3px 10px;
+        height: auto;
+        //selectpicker plugin
+        &--multiple {
+            height: auto;
+        }
+        &--transparent {
+            // background: none;
+            padding-right: 1.75rem;
+            border-color: #707070;
+            background: url('../static/images/icons/actions-general/arrow-down-black.png') transparent right .5rem center no-repeat;
+            -webkit-appearance:none;
+               -moz-appearance:none;
+                    appearance:none;
+        }
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        // grid-template-columns: minmax(280px, 1fr) minmax(100px, 500px);
+        // grid-column-gap: 40px;
+        // grid-row-gap: 20px;
+        // align-items: center;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        font-size:14px;
+        &--spaced {
+            span {
+                margin-bottom: 0.5rem;
+                &:nth-child(2n) {
+                    color: $gray-500;
+                }
+            }
+        }
+    }
+    #company_type {
+        display: flex;
+        align-items: center;
+        border:none;
+        &>input[type="checkbox"]{
+            width: 20px;
+            height: 20px;
+            margin:0 5px;
+        }
+    }
+    &__buttons-row {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+    }
+    &__button[type='submit']{
+        grid-column: 2;
+        border:none;
+        margin-top:20px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        justify-self: end;
+        color:$white;
+        background-color: lighten($action-color,20%);
+        box-shadow: 0px 5px $action-color;
+        &:active {
+            box-shadow: 0px 3px $action-color;
+            transform: translateY(4px);
+        }
+    }
+    &__button {
+        cursor:pointer;
+    }
+    &__error {
+        color: $danger;
+        font-size: 0.75rem;
+        grid-column-start: 2;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+// SCOPED COMPONENTS' CODE
